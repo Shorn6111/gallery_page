@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@mixin align-center {
+	display: flex;
+	justify-content: center;
+	align-content:center;
+}
+
+body{
+	font-family:"Andale Mono", sans-serif;
+	font-size: 4em;
+	color:white;
+	
+}
+.parallax_wrapper{
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	perspective: 300px;
+}
+.intro_screen {
+	height: 100vh;
+	background-color: tomato;
+	@include align-center;}
